@@ -14,7 +14,31 @@ Dify (Cloud) · Gemini via Google AI Studio · Hybrid retrieval · Prompt-level 
 
 ## Try it
 
-This repo contains the knowledge base (`knowledge/nordbridge-faq.md`) and screenshots (`screenshots/`). The live demo link is in the repo description. To rebuild: import the FAQ file into a Dify Knowledge base (chunk 500 / overlap 50), create a Chatbot, and add the grounding instruction from `prompt/system-instruction.txt`.
+**Live demo: https://udify.app/chat/KIlnt5DyLeQbNl2s** (no sign-in needed — ask it about shipping times, customs, insurance, or try to make it answer something outside the FAQ)
+
+This repo contains the knowledge base (`knowledge/nordbridge-faq.md`) and screenshots (`screenshots/`). To rebuild: import the FAQ file into a Dify Knowledge base (chunk 500 / overlap 50), create a Chatbot, and add the grounding instruction from `prompt/system-instruction.txt`.
+
+## Screenshots
+
+Knowledge base — `nordbridge-faq.md` indexed and available:
+
+![Knowledge base](screenshots/01-knowledge-base.png)
+
+Retrieval settings — hybrid search (semantic 0.7 / keyword 0.3), top K = 3:
+
+![Retrieval settings](screenshots/02-retrieval-settings.png)
+
+App orchestration — grounding instruction + Gemini 2.5 Flash:
+
+![Orchestration](screenshots/03-orchestration.png)
+
+Preview test — correct grounded answers, and an honest "I don't have that information" instead of a hallucinated price:
+
+![Preview Q&A](screenshots/04-preview-qa.png)
+
+The published web app answering live:
+
+![Public web app](screenshots/05-public-webapp.png)
 
 ## What this proves
 
